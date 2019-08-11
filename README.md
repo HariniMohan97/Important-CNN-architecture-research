@@ -13,7 +13,7 @@ In the network I built, I kept the following things in mind:
 4) The batch size is basically the number of batch propagations that occurs. So increasing it also helped in increasing accuracy. Although I kept it at 32 at the end to push the network. 
 So this is the first thing I tried along with removing the relu activation function from the last convolution layer.
 
-5)The model was definitely overfitting, i.e, the training accuracy was much higher than the validation accuracy. This was addressed by the usage of drop out. Drop out forces the network to learn the more robust features that are required. Although Dropout doubles the number of iterations required to converge.
+5) The model was definitely overfitting, i.e, the training accuracy was much higher than the validation accuracy. This was addressed by the usage of drop out. Drop out forces the network to learn the more robust features that are required. Although Dropout doubles the number of iterations required to converge.
 
 6) Scheduling Learning Rate also helped in converging faster or reaching the minima sooner. Keeping a smaller lr as we get closer to the minima helps in converging faster.
 
